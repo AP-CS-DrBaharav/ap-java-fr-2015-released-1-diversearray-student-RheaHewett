@@ -5,37 +5,19 @@ public class DiverseArray {
     
     public static int arraySum(int[] arr){
         /* To do in part (a) */
-        //return 0;
-        int sum = 0;
-        for (int ii=0; ii<arr.length; ++ii)
-            sum += arr[ii];
-        return sum;
+        return 0;
+
     }
     
     public static int[] rowSums(int[][] arr2D){
         /* To do in part (b) */
-        //return new int[] {0,1,2};
+        return new int[] {0,1,2};
 
-        int[] out = new int[arr2D.length];
-        
-        for (int rr=0; rr<arr2D.length ; ++rr)
-            out[rr] = arraySum(arr2D[rr]); 
-        
-        return out;
     }
     
     public static boolean isDiverse(int[][] arr2D){
         /* To do in part (c) */
-        //return false;
-        int[] vec ;
-        vec = rowSums(arr2D);
-        
-        for (int ii=0; ii<arr2D.length ; ++ii) {
-            int val1 = vec[ii];
-            for (int jj=ii+1; jj<arr2D.length ; ++jj)
-                if (val1 == vec[jj]) return false;
-        }
-        return true;
+        return false;
     }
     
     
